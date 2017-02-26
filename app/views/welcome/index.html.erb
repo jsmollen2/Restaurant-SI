@@ -1,2 +1,16 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<!DOCTYPE html>
+<html>
+		<title>DevineEats</title>
+		<header>
+			<%= link_to "Sign Out", signout_path, class: "btn btn-default btn-lg" %>
+		</header>
+		<div class= "jumbotron center">
+			<h1>Devine Eats Boi</h1>
+		<p>
+			Welcome to DevineEats, we ensure that all your food will be elite, mackin, and nothing short of Devine. 
+		</p>
+
+		<%= link_to "Sign In", user_path, class: "btn btn-default btn-lg" %>
+		<%= link_to "Sign Up", user_path, class: "btn btn-default btn-lg" %>
+
+</html>
