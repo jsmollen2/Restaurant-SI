@@ -1,0 +1,16 @@
+<h1><%= @eatery.name%></h1>
+<h3>Phone Number <br> <%= @eatery.phone %></h3>
+<p> <%= @eatery.description %></p>
+
+<h3> Address: </h3>
+<p><%= @eatery.address_street %></p>
+<% if @eatery.address_street2? %>
+<p><%= @eatery.address_street2 %></p>
+<% end %>
+<p><%= @eatery.address_city %></p>
+<p><%= @eatery.address_state %></p>
+
+<%= render 'reservations/new' %>
+
+<%= link_to 'Edit', edit_eatery_path(@eatery) %> |
+<%= link_to 'Back', eateries_path %>
